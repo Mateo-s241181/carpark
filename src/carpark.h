@@ -26,9 +26,10 @@ struct CarPark {
     /// Liefert true, falls das Parkdeck einen Platz mit der ID hat.
     bool hasId(size_t deck_no, std::string const& id) const;
 
-    /// Erwartet eine Parkplatz-ID und liefert true, falls dieser Platz besetzt ist.
+    /// Erwartet eine Deck-Nummer und Parkplatz-ID.
+    /// Liefert true, falls dieser Platz besetzt ist.
     /// Liefert auch true, falls der Platz nicht existiert.
-    bool isOccupied(std::string const& id) const;
+    bool isOccupied(size_t deck_no, std::string const& id) const;
 
     /// Besetzt den Parkplatz mit der gegebenen ID im angegebenen Deck.
     /// Liefert true zurück, falls der Platz existiert hat und frei war,

@@ -11,7 +11,7 @@ bool CarPark::hasId(size_t deck_no, std::string const& id) const
     return false;
 }
 
-bool CarPark::isOccupied(std::string const& id) const
+bool CarPark::isOccupied(size_t deck_no, std::string const& id) const
 {
     // TODO
     return false;
