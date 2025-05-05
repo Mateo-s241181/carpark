@@ -3,18 +3,22 @@
 
 #include <string>
 #include <vector>
+#include <map>
 
 /// Ein Parkhaus soll eine Reihe von Parkdecks enthalten, die wiederum
 /// aus einzelnen Parkplätzen bestehen.
 struct CarPark {
     // TODO: Definieren Sie die Attribute dieser Klasse.
     //       Implementieren Sie die Methoden in der Datei `carpark.cpp`.
-
+    
     // Genauere Anforderungen:
     // - Die einzelnen Parkplätze haben jeweils eine ID,
     //   wobei diese ein beliebiger String sein kann.
     // - Für jede ID soll gespeichert werden,
     //   ob der Platz frei oder besetzt ist.
+    
+    std::vector<std::map<std::string, bool>> Parkdecks;
+
 
     /// Konstruktor: Erwartet eine Liste von Listen von IDs.
     /// Dabei steht jede Liste für eines der Parkdecks.
